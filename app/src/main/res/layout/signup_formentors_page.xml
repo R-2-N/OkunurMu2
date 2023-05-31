@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewSignUpForMentor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/mentor_signup_title"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backButtonMentor"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/baseline_keyboard_arrow_left_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameMentorSignUp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="106dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="@string/signup_name"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usernameMentorSignUp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="@string/signup_username"
+        android:inputType="text"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameMentorSignUp" />
+
+
+    <Spinner
+        android:id="@+id/uniSpinner"
+        android:layout_width="351dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/button_background_gradient_orange"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameMentorSignUp" />
+
+    <Spinner
+        android:id="@+id/departmentSpinner"
+        android:layout_width="351dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/button_background_gradient_orange"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uniSpinner" />
+
+    <EditText
+        android:id="@+id/emailMentorSignUp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/departmentSpinner" />
+
+    <EditText
+        android:id="@+id/passwordMentorSignUp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailMentorSignUp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/passwordAgainMentorSignUp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="@string/signup_second_password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordMentorSignUp"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/mentorSignUpView"
+        android:layout_width="357dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_background_solid_orange"
+        android:fontFamily="@font/inter"
+        android:onClick="signupButtonClick"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordAgainMentorSignUp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
